@@ -1,6 +1,6 @@
 # Gurmukhi Handwritten Digit Classification Report
 ## Introduction
-The objective of this project is to classify Gurmukhi handwritten digits using a Neural Network. The dataset used in this project consists of images of handwritten digits from 0 to 9, written in the Gurmukhi script. The dataset was manually created and labeled by the author of the project.
+The objective of this project is to classify Gurmukhi handwritten digits using a Neural Network. The dataset used in this project consists of images of handwritten digits from 0 to 9, written in the Gurmukhi script.
 
 ## Methodology
 The project was implemented using Python 3. The neural network was implemented using the numpy and matplotlib libraries. The PIL library was used to process the images.
