@@ -1,6 +1,6 @@
-# Gurmukhi Handwritten Digit Classification Report
+# Gurmukhi Handwritten Digit Classification Report(Building nueral network from scratch)
 ## Introduction
-The objective of this project is to classify Gurmukhi handwritten digits using a Neural Network. The dataset used in this project consists of images of handwritten digits from 0 to 9, written in the Gurmukhi script.
+The objective of this project is to classify Gurmukhi handwritten digits using a Neural Network. The dataset used in this project consists of images of handwritten digits from 0 to 9, written in the Gurmukhi script. The neural network is build from scratch .
 
 ## Methodology
 The project was implemented using Python 3. The neural network was implemented using the numpy and matplotlib libraries. The PIL library was used to process the images.
@@ -11,11 +11,22 @@ The dataset used in this project consists of two directories, train and test. Th
 ## Neural Network Architecture
 The neural network used in this project consists of an input layer with 1024 neurons (one for each pixel in the flattened image), two hidden layers, each with 10 neurons, and an output layer with 10 neurons, one for each class of digit. The activation function used in the hidden layers is the Rectified Linear Unit (ReLU) function, and the softmax function is used in the output layer to produce a probability distribution over the classes.
 
+### Architecture
+![Alt text](nnarchitechture.png)
+
+### Fordware Progagation
+
+![Alt text](fordwardprop.png)
+
+### Backward propagation
+
+![Alt text](backwardprop.png)
+
 ## Training
 The neural network was trained using backpropagation with mini-batch gradient descent. The weights of the neural network were initialized with random values between -0.5 and 0.5. The learning rate used in the training process was 0.1, and the number of iterations was set to 1000. The training data was shuffled before each epoch to prevent the network from learning the order of the training data. The accuracy of the neural network was evaluated on the test data after each epoch.
 
 ## Results
-The accuracy of the neural network on the test data was 92.1% after 1000 iterations. The accuracy of the neural network on the training data was 99.8% after 1200 iterations. The network was able to achieve a high level of accuracy on the test data, which indicates that it was able to generalize well to unseen data.
+The accuracy of the neural network on the test data was 91% after 800 iterations. The accuracy of the neural network on the training data was 99.8% after 800 iterations. The network was able to achieve a high level of accuracy on the test data, which indicates that it was able to generalize well to unseen data.
 
 ## Conclusion
 The project demonstrates that a neural network can be used to classify Gurmukhi handwritten digits with high accuracy. The accuracy achieved by the neural network on the test data indicates that it can be used in practical applications. The project can be further extended by using more advanced neural network architectures and optimization algorithms to improve the accuracy of the network.
